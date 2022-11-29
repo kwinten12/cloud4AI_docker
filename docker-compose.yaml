@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  model:
+    build: ./model
+    container_name: model_container
+    volumes:
+      - storage:/model
+      
+  website:
+    build: ./website
+    container_name: website_container
+    volumes:
+      - storage:/website
+    ports:
+      - 8080:5000
+
+volumes:
+  storage:
