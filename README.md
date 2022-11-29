@@ -16,7 +16,7 @@
   Once we have an output it will be given back to the HTML page that will print the result.
 
 ## usage
-Go to the directory in wich the docker-compose file is stored with a cli using cd "<directory>".
+Go to the directory in wich the docker-compose file is stored with a cli using cd "directory".
 Then, use the command "docker-compose up" to run the docker files.
 Go to localhost:8080 to see the webserver running.
 
