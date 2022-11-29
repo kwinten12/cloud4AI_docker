@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    </head>
+
+    <body>
+        
+        <h1>run this model to predict diabates</h1>
+        <p>enter values 6,148,72,35,50. The output should be 1 a.k.a. true</p>
+        <form action="/result" method="POST">
+            <label for="inp1">Pregnancies: </label>
+            <input type="number" id="inp1" step="0.01", name="inp1">
+
+            <label for="inp2">Glucose: </label>
+            <input type="number" id="inp2" step="0.01", name="inp2">
+
+            <label for="inp3">BloodPressure: </label>
+            <input type="number" id="inp3" step="0.01", name="inp3">
+
+            <label for="inp4">SkinThickness: </label>
+            <input type="number" id="inp4" step="0.01", name="inp4">
+
+            <label for="inp5">Age: </label>
+            <input type="number" id="inp5" step="0.01", name="inp5">
+
+            <button type="submit" id="btn">calculate</button>
+        </form>
+
+        <p id="result">
+            {% if prediction %}
+            <h3> prediction is {{prediction}}</h3>
+            {% endif %}
+
+        </p>
+    </body>
+</html>
