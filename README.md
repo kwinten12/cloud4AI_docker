@@ -1,4 +1,4 @@
-# cloud4AI_docker
+# cloud4AI_docker (r0855665, Kwinten Van Houtven)
 
 ## docker-compose:
 
